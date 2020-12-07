@@ -1,4 +1,4 @@
-# marvin.automation.script.sample.202012001
+# marvin.automation.script.sample.20201201
 Marvin automation script sample: describe AWS instances with Boto3
 
 ## Create a Trek Project from zero
