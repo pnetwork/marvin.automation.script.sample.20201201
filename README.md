@@ -4,8 +4,8 @@ Marvin automation script sample: describe AWS instances with Boto3
 ## Create a Trek Project from zero
 ### Steps
 1. pip3 install trek==0.0.0a0 blcks -i https://package.pentium.network/repository/pypi-group/simple --trusted-host=package.pentium.network
-1. Create a trek project: trek createproject marvin.automation.script.sample.202012001
-1. cd marvin.automation.script.sample.202012001
+1. Create a trek project: trek createproject marvin.automation.script.sample.20201201
+1. cd marvin.automation.script.sample.20201201
 1. Add scripts you need in packages.json: “notification”: “>=0.5.0”
 1. Install scripts in package.json:  trek install
 1. Create your scripts in project: trek createblcks blcksdescribeinstances
