@@ -1,0 +1,17 @@
+description: 選擇指定的 Chatbot IM，傳送訊息至指定頻道
+inputs.macro_list.description: 自動化流程列表參數
+inputs.macro_list.examples: ''
+inputs.macro_list.title: 自動化流程列表參數
+inputs.macro_obj.description: 自動化流程物件參數
+inputs.macro_obj.examples: ''
+inputs.macro_obj.title: 自動化流程物件參數
+inputs.macro_params.description: 物件參數 (JSON format)
+inputs.macro_params.examples: ''
+inputs.macro_params.title: 帶入自填物件參數(JSON format)
+inputs.str_message.description: 訊息內容
+inputs.str_message.examples: ''
+inputs.str_message.title: 訊息內容
+outputs.status.description: 發送訊息的狀態
+outputs.status.examples: ''
+outputs.status.title: 狀態
+title: 傳送訊息至指定頻道

@@ -1,0 +1,17 @@
+description: 选择指定的 Chatbot IM，传送信息至指定频道
+inputs.macro_list.description: 自动化流程列表参数
+inputs.macro_list.examples: ''
+inputs.macro_list.title: 自动化流程列表参数
+inputs.macro_obj.description: 自动化流程物件参数
+inputs.macro_obj.examples: ''
+inputs.macro_obj.title: 自动化流程物件参数
+inputs.macro_params.description: 物件参数 (JSON format)
+inputs.macro_params.examples: ''
+inputs.macro_params.title: 带入自填物件参数(JSON format)
+inputs.str_message.description: 信息内容
+inputs.str_message.examples: ''
+inputs.str_message.title: 信息内容
+outputs.status.description: 发送信息的状态
+outputs.status.examples: ''
+outputs.status.title: 状态
+title: 传送信息至指定频道

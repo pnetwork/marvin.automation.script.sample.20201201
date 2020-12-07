@@ -1,0 +1,15 @@
+# Created by trek CLI
+0-1:
+    key_id.provider_id:
+        type: string
+        value: CP-000000005
+    key_id.cloud_account_id:
+        type: string
+        value: CA-nkfl4k208
+    key_id.cloud_credential:
+        type: string
+        value: CC-nkfl4k23h
+1-2:
+    bot_infos.0:
+        type: string
+        value: CH-okfl3jx4q

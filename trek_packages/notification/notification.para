@@ -1,0 +1,43 @@
+id: notification
+schemaVersion: '0.2'
+version: 0.8.0
+title: 传送讯息至指定频道
+description: 选择 bot 配对，传送消息至指定频道
+namespace: network.pentium
+assets:
+- CHATBOTPAIR
+inputs:
+  bot_infos:
+    $ref: pn_ids_chatpair
+  str_message:
+    title: Message context.
+    description: The message used to send to the specified channel.
+    $ref: pn_sp_textarea_str
+  macro_obj:
+    title: 工作流程物件参数
+    type: object
+  macro_list:
+    title: 工作流程列表参数
+    type: array
+    items:
+      type: object
+  macro_params:
+    title: 带入自填物件参数(JSON format)
+    $ref: pn_sp_textarea_str
+    description: 物件参数 (JSON format)
+required:
+- str_message
+outputs:
+  status:
+    description: The status of sending message.
+    type: string
+    enum:
+    - success
+    - failure
+    - no data
+    enumNames:
+    - 成功
+    - 失败
+    - 无资讯
+    examples:
+    - success

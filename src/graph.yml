@@ -1,0 +1,49 @@
+$schema: 'http://json-schema.pentium.network/marvin-workflows/0.1/schema'
+graph:
+  metadata:
+    version: 0.0.0
+    templateId: aws.describe.instances
+    title: 取得所有 AWS EC2 描述並發送到指定頻道
+    author: ''
+    description: 透過 boto3 取得 describe instances 內容，並且發送至指定頻道
+  edges:
+    - source: '0'
+      target: '1'
+    - source: '1'
+      target: '2'
+      metadata:
+        binding:
+          - property: str_message
+            type: string
+            value: '{{ 1.resp }}'
+  nodes:
+    - id: '0'
+      metadata:
+        type: trigger
+        sources: []
+        marvinProperties:
+          position:
+            xAxis: 165
+            yAxis: 275
+    - id: '1'
+      metadata:
+        type: action
+        title: 取得 AWS 實例說明
+        description: 透過 boto3 取得 AWS 實例說明
+        marvinProperties:
+          position:
+            xAxis: 495
+            yAxis: 275
+        script:
+          id: blcksdescribeinstances
+    - id: '2'
+      metadata:
+        type: action
+        title: 傳送訊息至指定頻道
+        description: 選擇指定的 Chatbot IM，傳送訊息至指定頻道
+        marvinProperties:
+          position:
+            xAxis: 770
+            yAxis: 275
+        script:
+          id: notification

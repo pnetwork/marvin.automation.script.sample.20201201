@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://jhow-liu-openfaas-deploy.pentium.network
+functions:
+  notification:
+    lang: python3_blcks_flask
+    handler: blcks.python.im.notification/handler
+    image: cr.pentium.network/notification:8cad5ca.20201102142350
+    secrets:
+    - pn-faas-secret
+    - pn-faas-secret-blcks

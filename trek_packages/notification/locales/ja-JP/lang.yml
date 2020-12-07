@@ -1,0 +1,17 @@
+description: Select a chatbot IM and send a message to selected channel(s)
+inputs.macro_list.description: Workflow list parameter
+inputs.macro_list.examples: ''
+inputs.macro_list.title: Workflow list parameter
+inputs.macro_obj.description: Workflow object parameter
+inputs.macro_obj.examples: ''
+inputs.macro_obj.title: Workflow object parameter
+inputs.macro_params.description: Object parameter (JSON format)
+inputs.macro_params.examples: ''
+inputs.macro_params.title: Please enter object parameter (JSON format)
+inputs.str_message.description: Message content
+inputs.str_message.examples: ''
+inputs.str_message.title: Message content
+outputs.status.description: The status of sending message.
+outputs.status.examples: ''
+outputs.status.title: Status
+title: Send message to specified chatbot IM

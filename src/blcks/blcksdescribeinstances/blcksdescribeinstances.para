@@ -1,0 +1,20 @@
+id: blcksdescribeinstances
+schemaVersion: '0.2'
+version: '0.1.0'
+title: 取得 AWS 實例說明
+description: 透過 boto3 取得 AWS 實例說明
+namespace: network.pentium
+assets:
+- HOST
+inputs:
+  key_id:
+    $ref: pn_sp_cdn_credential
+
+required:
+- key_id
+
+outputs:
+  resp:
+    title: boto3 回傳結果
+    description: boto3 回傳結果
+    type: string
